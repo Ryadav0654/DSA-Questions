@@ -16,7 +16,6 @@
 int heightChecker(vector<int>& heights) {
         //copy vector
         vector<int> temp;
-
         for(int i = 0; i < heights.size(); i++){
             temp.push_back(heights[i]);
         }
