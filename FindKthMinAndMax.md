@@ -4,9 +4,12 @@
 > https://www.naukri.com/code360/problem-of-the-day/easy
 
 ### Approach:
-* Sort the array
-* Find kth smallest and kth largest
+
+* Sort the array using standard library sort function 
+* Find kth smallest and kth largest element in the array
+* insert them in a ans vector 
 * Return them in a vector
+
 ### Code:
 
 ```C++
