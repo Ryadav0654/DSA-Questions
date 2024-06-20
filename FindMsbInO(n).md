@@ -1,7 +1,6 @@
 #  Find MSB In O(1) or Greatest Power Of 2 which Is Less Than Or Equal To N
 
 ## Problem statement: 
-**Problem statement** 
 - You are given a positive integer 'N'. Your task is to find the greatest integer less than or equal to 'N' which is a power of 2.
 
 **For Example:**
