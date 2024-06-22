@@ -30,7 +30,7 @@ int binaryToInteger(int n, Node *head) {
 }
 ```
 
-**Time Complexity** `O(n)`, where `n` is the number of nodes in the linked list.
-**Space Complexity** `O(1)`, as no extra space is used.(function)
+**Time Complexity :** `O(n)`, where `n` is the number of nodes in the linked list.
+**Space Complexity :** `O(1)`, as no extra space is used.`(for function)`
 
 - The space used by the linked list itself is `O(n)`, where `n` is the number of nodes in the linked list.
