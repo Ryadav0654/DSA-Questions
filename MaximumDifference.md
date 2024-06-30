@@ -43,6 +43,19 @@ string maxDifference(vector<int> arr, int n) {
 
 ```
 
+### Using inbuilt function:
+```C++
+string maxDifference(vector<int> arr, int n) {
+    int mini = *min_element(arr.begin(), arr.end());
+    int maxi = *max_element(arr.begin(), arr.end());
+    int num = maxi - mini;
+    if(num&1) return "ODD";
+
+    return "EVEN";
+}
+
+```
+
 **Time Complexity:** `O(n)`, where `n` is the size of array or vector.
 
 **Space Complexity:** `O(1)`,  constant space.
