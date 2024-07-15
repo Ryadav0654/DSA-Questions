@@ -23,11 +23,7 @@ class Solution {
             num /= 10;
         }
 
-        if(sum == n){
-            return "Yes";
-        }
-
-       return "No";
+       return (sum == n) ? "true" : "false"; 
     }
 };
 ```
