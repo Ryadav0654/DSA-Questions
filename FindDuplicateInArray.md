@@ -1,4 +1,4 @@
-# Find duplicate in Array:
+# Find duplicate in Array(More than one elements are duplicate):
 
 > Question link:
 > https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1
