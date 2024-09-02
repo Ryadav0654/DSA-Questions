@@ -1,11 +1,33 @@
 # Remove Duplicates from Sorted Array
 
 > Question link:
-https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
+> https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/
 
 > Solution link:
-https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-array/
+> https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-array/
 
+### Code:
+
+```C++
+
+int removeDuplicates(int arr[], int n) {
+  set < int > set;
+  for (int i = 0; i < n; i++) {
+    set.insert(arr[i]);
+  }
+  int k = set.size();
+  int j = 0;
+  for (int x: set) {
+    arr[j++] = x;
+  }
+  return k;
+}
+
+```
+
+- Time complexity:` O(n*log(n))+O(n)`
+
+- Space Complexity: `O(n) `
 
 ### Code:
 
@@ -36,6 +58,7 @@ https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-a
 ## Optimal approach(two pointer algorithm):
 
 ### Code:
+
 ```C++
     int findDuplicate(vector<int>& nums) {
         int j = 0;
@@ -46,7 +69,7 @@ https://takeuforward.org/data-structure/remove-duplicates-in-place-from-sorted-a
                 nums[j] = nums[i];
             }
         }
-        
+
         return j+1;
     }
 ```
