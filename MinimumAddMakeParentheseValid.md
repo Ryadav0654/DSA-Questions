@@ -8,19 +8,31 @@
 class Solution {
 public:
     int minAddToMakeValid(string s) {
+        // initialise the open and min_required_cnt to track the count of '(' and required close or open bracket to make the string valid
+
         int open_cnt = 0;
-        int close_cnt = 0;
+        int min_required_cnt = 0;
+        // iterate through the string
         for(int i =0; i < s.length(); i++){
+            // if the current character is '('
             if(s[i] == '('){
                 open_cnt++;
-            }else if(open_cnt != 0 && s[i] == ')'){
+
+            }else if(open_cnt != 0 && s[i] == ')'){// if the current character is ')'
+
                 open_cnt--;
+
             }else{
-                close_cnt++;
+
+                // if the current character is ')'
+                min_required_cnt++;
+
             }
         }
 
-        return  open_cnt+close_cnt;
+        // return the open_cnt + min_required_cnt
+        //min_required_cnt: which is the count of '(' and required close or open bracket to make the string valid
+        return  open_cnt+min_required_cnt;
     }
 };
 ```
@@ -47,7 +59,7 @@ public:
                 }
             }else{
                 st.push(s[i]);
-            }  
+            }
         }
 
         return st.size();
